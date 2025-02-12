@@ -13,6 +13,7 @@ var serial = {};
     const filters = [
       { 'vendorId': 0x37C3, 'productId': 0x9901 }, // ChipWon 9901
       { 'vendorId': 0x0D28, 'productId': 0x0204 }, // Arm     0204
+      { 'vendorId': 0x2341, 'productId': 0x804D }, // Arduino Uno/Zero
     ];
     return navigator.usb.requestDevice({ 'filters': filters }).then(
       device => new serial.Port(device)
@@ -21,9 +22,9 @@ var serial = {};
 
   serial.Port = function(device) {
     this.device_ = device;
-    this.interfaceNumber_ = 4;  // original interface number of WebUSB device
-    this.endpointIn_ = 5;       // original in endpoint ID of WebUSB device
-    this.endpointOut_ = 4;      // original out endpoint ID of WebUSB device
+    this.interfaceNumber_ = 0;  // original interface number of WebUSB device
+    this.endpointIn_ = 2;       // original in endpoint ID of WebUSB device
+    this.endpointOut_ = 6;      // original out endpoint ID of WebUSB device
   };
 
   serial.Port.prototype.connect = function() {
