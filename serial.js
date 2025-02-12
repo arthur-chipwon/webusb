@@ -12,8 +12,6 @@ var serial = {};
   serial.requestPort = function() {
     const filters = [
       { 'vendorId': 0x37C3, 'productId': 0x9901 }, // ChipWon 9901
-      { 'vendorId': 0x0D28, 'productId': 0x0204 }, // Arm     0204
-      { 'vendorId': 0x2341, 'productId': 0x804D }, // Arduino Uno/Zero
     ];
     return navigator.usb.requestDevice({ 'filters': filters }).then(
       device => new serial.Port(device)
