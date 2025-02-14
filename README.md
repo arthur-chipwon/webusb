@@ -8,5 +8,8 @@ GitHub Pages site for connecting to ChipWon `WebUSB CWDWG Port` devices:
 - https://arthur-chipwon.github.io/webusb/
 
 ## Demos And References
-- https://github.com/WICG/webusb
-- https://github.com/webusb/arduino
+- WinUSB device - MSDN[link](https://learn.microsoft.com/en-us/windows-hardware/drivers/usbcon/automatic-installation-of-winusb/)
+- WebUSB API - W3C[link](https://wicg.github.io/webusb/)
+- https://github.com/pbatard/libwdi/wiki/WCID-Devices
+- https://github.com/WICG/webusb/
+- https://github.com/webusb/arduino/
