@@ -11,7 +11,7 @@ var serial = {};
 
   serial.requestPort = function() {
     const filters = [
-      { 'vendorId': 0x37C3, 'productId': 0x9901 }, // ChipWon 9901
+      { 'vendorId': 0x37C3, 'productId': 0x9A01 }, // ChipWon 9A01
     ];
     return navigator.usb.requestDevice({ 'filters': filters }).then(
       device => new serial.Port(device)
