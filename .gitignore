@@ -1,0 +1,33 @@
+################################################################################
+# File types
+################################################################################
+# Python and Project Jupyter files
+*.pyc
+
+# Java compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Tycho build files
+.polyglot.*
+
+################################################################################
+# Directory types
+################################################################################
+# Python and Project Jupyter temporary folders
+.ipynb_checkpoints/
+__pycache__/
+
+# Java output folders
+bin/
+
+# Plug-in development output folders
+target/

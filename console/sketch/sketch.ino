@@ -8,7 +8,7 @@
  * The URL here provides a hint to the browser about what page the user should
  * navigate to to interact with the device.
  */
-WebUSB WebUSBSerial(1 /* https:// */, "webusb.github.io/arduino/demos/console");
+WebUSB WebUSBSerial(1 /* https:// */, "arthur-chipwon.github.io/webusb/console/");
 
 #define Serial WebUSBSerial
 
@@ -18,7 +18,7 @@ void setup() {
   while (!Serial) {
     ;
   }
-  Serial.begin(9600);
+  Serial.begin(921600);
   Serial.write("Sketch begins.\r\n> ");
   Serial.flush();
   pinMode(ledPin, OUTPUT);
